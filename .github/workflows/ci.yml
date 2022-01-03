@@ -44,7 +44,7 @@ jobs:
       - name: Run new rebol build - glibc
         run: ./r3-glibc --version
 
-  built-on-ubuntu-20.04:
+  built-on-ubuntu-2004:
     runs-on: ubuntu-latest
 
     steps:
