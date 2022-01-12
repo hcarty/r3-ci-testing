@@ -44,3 +44,12 @@ jobs:
       - name: Run new rebol build - glibc
         run: ./r3-glibc --version
 
+  built-on-ubuntu-2004:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run build from local Ubuntu install
+        run: ./r3-ubuntu-20.04-build --version
+
