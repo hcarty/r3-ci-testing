@@ -52,3 +52,12 @@ jobs:
 
       - name: Run build from local Ubuntu install
         run: ./r3-ubuntu-20.04-build --version
+
+  oldes-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run build from local Ubuntu install
+        run: ./r3-oldes --version
